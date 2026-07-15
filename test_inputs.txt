@@ -1,0 +1,29 @@
+Test Cases for personal_info.py
+================================
+
+Test Case 1: Normal input
+--------------------------
+Favorite Food: Pizza
+Favorite Color: Blue
+Expected: Program displays all info correctly, age in months = 264
+
+Test Case 2: Empty input (validation check)
+--------------------------------------------
+Favorite Food: (press Enter with nothing typed)
+Expected: Program prints "Please enter a valid food!" and asks again
+Favorite Food (retry): Sushi
+Favorite Color: (press Enter with nothing typed)
+Expected: Program prints "Please enter a valid color!" and asks again
+Favorite Color (retry): Green
+Expected: Program then displays all info correctly
+
+Test Case 3: Long input
+------------------------
+Favorite Food: Homemade Margherita Pizza with fresh basil and mozzarella
+Favorite Color: A deep shade of ocean blue
+Expected: Program displays the full text without cutting it off
+
+Test Case 4: Input with extra spaces
+--------------------------------------
+Favorite Food: "   " (just spaces)
+Expected: Treated as empty input due to .strip() check, program re-prompts
